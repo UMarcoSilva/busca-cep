@@ -23,7 +23,7 @@ public class ConsultaViaCep {
         cep = leitor.nextLine();
     }
 
-    public EnderecoViaCep busca (String cep) throws IOException {
+    public EnderecoViaCep busca(String cep) throws IOException {
         URI endereco = URI.create("https://viacep.com.br/ws/" + cep + "/json/");
 
         HttpRequest request = HttpRequest.newBuilder()
